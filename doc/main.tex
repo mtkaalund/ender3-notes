@@ -4,10 +4,10 @@
 % Packages
 \usepackage[a4paper,includeheadfoot,margin=2.54cm]{geometry}
 \usepackage[english,danish]{babel}
-\usepackage[familydefault,regular]{Chivo}
+%\usepackage[familydefault,regular]{Chivo}
 
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{frontenc}
+%\usepackage[T1]{frontenc}
 
 \usepackage{hyperref}
 \usepackage{natbib}
@@ -34,7 +34,7 @@
 \fancyhf{}
 \fancyhead[LE,RO]{Ender-3 notes}
 \fancyhead[RE,LO]{\rightmark}
-\fancyfoot[CE,CO]{by M. T. Kaalund}
+\fancyfoot[CE,CO]{Ender-3 notes}
 \fancyfoot[LE,RO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 \renewcommand{\headrulewidth}{1.5pt}
 \renewcommand{\footrulewidth}{1.5pt}
@@ -46,4 +46,8 @@
 \begin{document}
     \maketitle
     \tableofcontents
+
+    \include{hardware/hardware}
+    \include{firmware/firmware}
+    \include{calibrate/calibrate}
 \end{document}

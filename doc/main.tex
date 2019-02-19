@@ -1,0 +1,49 @@
+\documentclass[10pt, a4paper]{article}
+\special{papersize=210mm,297mm}
+
+% Packages
+\usepackage[a4paper,includeheadfoot,margin=2.54cm]{geometry}
+\usepackage[english,danish]{babel}
+\usepackage[familydefault,regular]{Chivo}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{frontenc}
+
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{pgfplots}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+% New commands
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}\PackageWarning{TODO:}{#1!}}
+
+\newcommand{\vdc}{V$_{\text{DC}}$ }
+\newcommand{\vac}{V$_{\text{AC}}$ }
+
+% Pagestyle
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Ender-3 notes}
+\fancyhead[RE,LO]{\rightmark}
+\fancyfoot[CE,CO]{by M. T. Kaalund}
+\fancyfoot[LE,RO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1.5pt}
+\renewcommand{\footrulewidth}{1.5pt}
+
+%Title and author
+\title{Ender-3 notes on upgrading and calibrating}
+\author{M.T. Kaalund}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+\end{document}

@@ -4,5 +4,29 @@
 \subsection{The axies}
 \todo{Notes on how to Calibrate the x,y,z}
 
+\subsubsection{The Z axies with autolevel sensor}
+This methode I have been using and it works quite well for me. 
+I use it when, there has been a nozzle change or a new fiberplade install. \\
+\inforeader{To do this the printer needs to have a display with encoder on.}
+G-code commands needed to be sendt from computer or octoprint to the printer:
+\begin{itemize}
+    \item G28
+    \item M851 Z0
+    \item M500
+    \item M501
+    \item M851
+    \item \todo{delay}
+    \item G28 Z
+    \item G1 F60 Z0
+    \item \todo{explaine gcode}
+    \item M211 S0; Disable software endstops
+    \item M851 Z{new Z value on the display}
+    \item M211 S1; Enable software endstops
+    \item M500; Save the value to eeprom
+    \item M501; Read the value from eeprom
+\end{itemize}
+
+
+
 \subsection{The extruder}
 \todo{Notes on calibrate the extruder}
